@@ -41,7 +41,7 @@ The Country Management System is a Java-based console application designed to pe
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
+     *  <dependency>
         <groupId>jakarta.platform</groupId>
         <artifactId>jakarta.jakartaee-bom</artifactId>
         <version>11.0.0</version>
@@ -52,7 +52,7 @@ The Country Management System is a Java-based console application designed to pe
   </dependencyManagement>
 
 # created Table .....
-CREATE TABLE country_class (
+ * CREATE TABLE country_class (
     id INT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     capital VARCHAR(255) NOT NULL,
@@ -60,8 +60,8 @@ CREATE TABLE country_class (
 );
 
 # Contact :
-* Your Name = Samruddhi Andhalkar
-* Your Email = samruddhiandhalkar2007@gmail.com
+* Your Name = Samruddhi Andhalkar , Pooja Dolle
+* Your Email = samruddhiandhalkar2007@gmail.com , dollepooja4@gmail.com
 * Git Hub = samruddhiandhalkar
 
   
