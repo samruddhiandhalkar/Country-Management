@@ -32,7 +32,7 @@ The Country Management System is a Java-based console application designed to pe
 
 
 # Dependencies :
-<dependencyManagement>
+* <dependencyManagement>
   <dependencies>
     <dependency>
         <groupId>org.hibernate.orm</groupId>
