@@ -4,14 +4,14 @@ The Country Management System is a Java-based console application designed to pe
 
 # Features if this Project :
 
-1 Add new countries and their capitals
-2 Update the capital of existing countries
-3 Delete countries from the system
-4 View all countries and capitals
-5 Simple menu-driven console interface
-6 PostgreSQL database integration
-7 Uses JPA with Hibernate for ORM
-8 Modular and organized Java code structure
+1 . Add new countries and their capitals
+2. Update the capital of existing countries
+3 .Delete countries from the system
+4 .View all countries and capitals
+5 .Simple menu-driven console interface
+6 .PostgreSQL database integration
+7 .Uses JPA with Hibernate for ORM
+8 .Modular and organized Java code structure
 
 # Technologies Used :
 
@@ -21,6 +21,10 @@ The Country Management System is a Java-based console application designed to pe
 * PostgreSQL – Relational database for data storage
 * Maven – Build automation and dependency management
 * Spring Tool Suite / Eclipse – IDE used for development
+
+# Group Member : 
+* Samruddhi Andhalkar
+* Pooja Dolle
 
 # Screenshot of the Output :
 
@@ -47,23 +51,13 @@ The Country Management System is a Java-based console application designed to pe
     </dependencies>
   </dependencyManagement>
 
-  <dependencies>
-    <dependency>
-    <groupId>org.hibernate.orm</groupId>
-    <artifactId>hibernate-core</artifactId>
-</dependency>
-<dependency>
-    <groupId>jakarta.persistence</groupId>
-    <artifactId>jakarta.persistence-api</artifactId>
-</dependency>
-
-   <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-<dependency>
-    <groupId>org.postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-    <version>42.7.7</version>
-</dependency>
-  </dependencies>
+# created Table .....
+CREATE TABLE country_class (
+    id INT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    capital VARCHAR(255) NOT NULL,
+    population BIGINT
+);
 
 # Contact :
 * Your Name = Samruddhi Andhalkar
