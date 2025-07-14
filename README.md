@@ -4,14 +4,14 @@ The Country Management System is a Java-based console application designed to pe
 
 # Features if this Project :
 
-1 . Add new countries and their capitals
-2. Update the capital of existing countries
-3 .Delete countries from the system
-4 .View all countries and capitals
-5 .Simple menu-driven console interface
-6 .PostgreSQL database integration
-7 .Uses JPA with Hibernate for ORM
-8 .Modular and organized Java code structure
+* Add new countries and their capitals
+* Update the capital of existing countries
+* Delete countries from the system
+* View all countries and capitals
+* Simple menu-driven console interface
+* PostgreSQL database integration
+* Uses JPA with Hibernate for ORM
+* Modular and organized Java code structure
 
 # Technologies Used :
 
