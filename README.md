@@ -32,24 +32,14 @@ The Country Management System is a Java-based console application designed to pe
 
 
 # Dependencies :
-* <dependencyManagement>
-  <dependencies>
-    <dependency>
-        <groupId>org.hibernate.orm</groupId>
-        <artifactId>hibernate-platform</artifactId>
-        <version>7.0.5.Final</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-     *  <dependency>
-        <groupId>jakarta.platform</groupId>
-        <artifactId>jakarta.jakartaee-bom</artifactId>
-        <version>11.0.0</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+</dependency>
+
+   <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.7.7</version>
+</dependency>
 
 # created Table .....
  * CREATE TABLE country_class (
@@ -58,6 +48,14 @@ The Country Management System is a Java-based console application designed to pe
     capital VARCHAR(255) NOT NULL,
     population BIGINT
 );
+
+# Table Structure : 
+| Col          | Type         | Constraint   |
+| ------------ | ------------ | ------------ |
+| `id`         | INT          | PRIMARY KEY  |
+| `name`       | VARCHAR(255) | NOT NULL     |
+| `capital`    | VARCHAR(255) | NOT NULL     |
+| `population` | BIGINT       | *(nullable)* |
 
 # Contact :
 * Your Name = Samruddhi Andhalkar , Pooja Dolle
