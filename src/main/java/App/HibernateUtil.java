@@ -11,7 +11,7 @@ public class HibernateUtil
 			{
 				try 
 				{
-					entityManagerFactory=Persistence.createEntityManagerFactory("myPersistence");
+					entityManagerFactory=Persistence.createEntityManagerFactory("Country_Mag");
 				}
 				catch(Throwable e) 
 				{ 
