@@ -79,9 +79,9 @@ public class CountryDetails
             if (country != null)
             {
                 entityManager.remove(country);
-                System.out.println("✅ Country removed.");
+                System.out.println(" Country removed.");
             } else {
-                System.out.println("❌ Country not found.");
+                System.out.println(" Country not found.");
             }
 
             tx.commit();
