@@ -3,7 +3,7 @@ package App;
 import java.util.List;
 import java.util.Scanner;
 
-import entity.CountryClass;
+import Entity1.CountryClass;
 import ShowDetails.CountryDetails;
 
 public class MainProject
@@ -69,7 +69,7 @@ public class MainProject
 			            break;
 
 			        case 4:
-			            List<CountryClass> countries = countryDet.getAllEmployee();
+			            List<CountryClass> countries = countryDet.getAll();
 			            for (CountryClass country : countries) 
 			            {
 			                System.out.println(country);
