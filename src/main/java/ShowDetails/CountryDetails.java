@@ -8,8 +8,6 @@ import jakarta.persistence.EntityTransaction;
 
 public class CountryDetails
 {
-
-    
     public void showCountry(CountryClass country) 
     {
         EntityTransaction tra = null;
