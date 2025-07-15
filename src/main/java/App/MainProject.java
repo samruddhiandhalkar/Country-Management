@@ -23,7 +23,8 @@ public class MainProject
 			    System.out.println("2. Update Country Capital");
 			    System.out.println("3. Delete Country");
 			    System.out.println("4. Show All Countries");
-			    System.out.println("5. Exit");
+			    System.out.println("5. Update Country Population");
+			    System.out.println("6. Exit");
 			   
 			    System.out.print("Enter your choice: ");
 			    int choice = scanner.nextInt();
@@ -75,8 +76,19 @@ public class MainProject
 			                System.out.println(country);
 			            }
 			            break;
+			            
+			        case 5: 
+			   
+			            System.out.print("Enter Country ID to update population: ");
+			            int popId = scanner.nextInt();
 
-			        case 5:
+			            System.out.print("Enter new population: ");
+			            long newPop = scanner.nextLong();
+
+			            countryDet.updatePopulation(popId, newPop);
+			            break;
+					    
+			        case 6:
 			            System.out.println("Exiting program...");
 			            break;
 
