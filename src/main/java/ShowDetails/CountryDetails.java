@@ -64,7 +64,28 @@ public class CountryDetails
         }
     }
 
-   
+    public void updatePopulation(int id, long newPopulation) {
+        EntityTransaction tx = null;
+        try (EntityManager entityManager = HibernateUtil.getEntityManagerFactory().createEntityManager()) {
+            tx = entityManager.getTransaction();
+            tx.begin();
+
+            CountryClass country = entityManager.find(CountryClass.class, id);
+            if (country != null) {
+                country.setPopul(newPopulation);
+                entityManager.merge(country);
+                System.out.println(" Population updated successfully.");
+            } else {
+                System.out.println(" Country not found.");
+            }
+
+            tx.commit();
+        } catch (Exception e) {
+            if (tx != null && tx.isActive()) tx.rollback();
+            e.printStackTrace();
+        }
+    }
+
     public void delConuntry(int deleteId)
     {
         EntityTransaction tx = null;
