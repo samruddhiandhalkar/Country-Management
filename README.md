@@ -64,7 +64,7 @@ Add the following to your po.xml:
 | `capital`    | VARCHAR(255) | NOT NULL     |
 | `population` | BIGINT       | *(nullable)* |
 
-# Contact :
+# Author :
 * Your Name = Samruddhi Andhalkar , Pooja Dolle
 * Your Email = samruddhiandhalkar2007@gmail.com , dollepooja4@gmail.com
 * Git Hub = samruddhiandhalkar
